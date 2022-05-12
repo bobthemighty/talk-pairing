@@ -69,6 +69,9 @@ Note: This one makes me a little sad, because working with other people is suppo
 If you're watching someone type, _you're not pairing_
 
 Note: I will die on this particular hill - if you can't grab the keyboard and show your partner what you mean, then it's not pair programming. 
+
+--
+<iframe width="984" height="738" src="https://www.youtube.com/embed/C4oM_PPTMDs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen autoplay="true"></iframe>
 ---
 
 ## It's uncomfortable
