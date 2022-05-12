@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+   <meta charset="UTF-8">
+
+   <script type="text/javascript" src="script/reveal.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+   <script type="text/javascript" src="script/notes.js"></script>
+   <script type="text/javascript" src="script/markdown.js"></script>
+   <link rel="stylesheet" href="style/reveal.css">
+   <link rel="stylesheet" href="style/simple.css">
+   <link rel="stylesheet" href="/style/style.css">
+<script src="script/highlight.js"></script>  </head>
+
+  <body>
+    <div class="reveal">
+        <div class="slides">
+          <section data-markdown="words.md"
+                   data-separator="^---"
+                   data-separator-vertical="^--">
+              </section>
+            </div>
+    </div>
+
+<script>
+// More info about initialization & config:
+// - https://revealjs.com/initialization/
+// - https://revealjs.com/config/
+
+renderer = new marked.Renderer;
+renderer.paragraph = function(text) {
+    if (text.startsWith('<figure') && text.endsWith('</figure>'))
+        return text;
+    else
+        return '<p>' + text + '</p>';
+}
+
+renderer.image = function (href, title, alt) {
+  var out = '<figure class="stretch">';
+  out += '<img src="' + href + '" alt="' + alt + '">';
+  if (title) {
+    out += '<figcaption>' + title + '</figcaption>';
+  }
+  out += '</figure>';
+  return out;
+};
+
+ 
+Reveal.initialize({
+hash: true,
+display: "grid",
+markdown: {
+  renderer
+},
+
+dependencies: [
+    { src: 'https://reveal-multiplex.glitch.me/socket.io/socket.io.js', async: true },
+    { src: 'https://reveal-multiplex.glitch.me/client.js', async: true }
+],
+
+
+// Learn about plugins: https://revealjs.com/plugins/
+  plugins: [ RevealMarkdown, RevealNotes, RevealHighlight ]
+});
+
+</script>
+  </body>
+</html>
