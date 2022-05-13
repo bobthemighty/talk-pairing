@@ -1,16 +1,32 @@
-# Bit Parity Calculator
-A parity bit, or check bit, is a bit added to a string of bits to ensure that the total number of 1-bits in the string is even or odd. Parity bits are used as the simplest form of error detecting code.
+# Find the parity outlier
+You are given an array (which will have a length of at least 3, but could be very large) containing integers. The array entirely comprises odd integers or entirely comprises even integers except for a single integer N. Write a method that takes the array as an argument and returns this "outlier" N.
+Examples
 
-You have two parameters, one being the wanted parity (always 'even' or 'odd'), and the other being the binary representation of the number you want to check.
+[2, 4, 0, 100, 4, 11, 2602, 36]
+Should return: 11 (the only odd number)
 
-Your task is to return an integer (0 or 1), whose parity bit you need to add to the binary representation so that the parity of the resulting string is as expected.
+[160, 3, 1719, 19, 11, 13, -21]
+Should return: 160 (the only even number)
 
-## Example:
+## Bonus
 
-Parity: 'even'  
-Bin: '0101010'  
-Result: 1
+How would your code change if it needed to handle infinitely long sequences?
 
-Because there is an odd number of 1-bits (3) you need to put another 1 to it to get an even number of 1-bits.
+In javascript we can use Generators to create sequences, eg.
 
-For more information: https://en.wikipedia.org/wiki/Parity_bit
+```
+function *parityGenerator() {
+    let i = 0;
+    while (i++ < 100000000)
+        yield 2;
+    yield 3;
+    while(true) {
+        yield 4;
+    }
+}
+
+// runs forever
+for (const i of parityGenerator()) {
+  console.log(i)
+}
+```

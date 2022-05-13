@@ -40,3 +40,8 @@ Buzz
 ## Stage 2 - new requirements
 * A number is fizz if it is divisible by 3 or if it has a 3 in it
 * A number is buzz if it is divisible by 5 or if it has a 5 in it
+
+
+## Bonus
+
+Extend your solution to configurably support new rules. You should be able to create a game where, eg. "Fuzz" replaces all even numbers (one, fuzz, fizz, fuzz, buzz, fizzfuzz etc), or where "Pop" replaces numbers divisible by 7.
