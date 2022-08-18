@@ -1,53 +1,81 @@
-#+title: Plan
+#+title: Facilitator Notes
 
-Set up the repo and get it checked out today.
+* Why?
 
-3 Hours in total
-1.5 hours is pairing katas
-5 for retro
+The purpose of this workshop is to get people to:
 
-30 minutes of down time
+1) reflect on how they pair today
+2) practice some more structured ways of pair programming
+3) think about how they might change their daily practice
 
-1330:
-Hey how are you
-Check-in
+* Before the workshop
 
-1340:
-What's the point of this workshop?
+** Ask participants to check out the repository ahead of time
+** Create a new Miro board based on the template
+https://miro.com/app/board/uXjVPeb7UmQ=/
+** Ask participants privately whether they have any preferences for who they want to pair with
+** Set up a slack group for the participants
+** Consider using VS Code
+VS Code has the live share feature, which is a handy way for people to pair, and saves some time with git commits and screen sharing.
+If you're using it, make sure you do a "sound-check" as part of your intro, where you get everyone to test that they are able to connect with their pair in VS Code.
 
-1345:
-Reflect on collaboration
+* The schedule
 
-1355:
-Intro pairing + strong-style
+** Intro - 25 minutes
+Say hi to your cohort, welcome them in.
+The miro board has a check-in box. Take 10 minutes to greet people and ask them to check-in on the board, and let you know how they're feeling today. Are they excited about the workshop, are they anxious about having pair? This is a good way to gauge the temperature in the room, and to get people into the mood to interact with you.
 
-1405: demo
+Explain the point of the workshop ( # Purpose section of the slides)
 
-1415: kata
+Ask the participants to reflect about the best experiences they've had working with others (# Reflect). You're looking for positive messages about collaboration that you can reflect back to the group: working with other people is _fun_, it's better for learning, it's more productive, and so on.
 
-1450:
-retro
+** Talky bit: Why might pair programming not suit you - 5 mins
+In this section of the slides, we're just talking through the reasons that pairing is hard, and the things we can do to mitigate them.
 
-1500:
-break
+Often, teams who take this workshop are having _problems_ with their pairing approach. The goal of this section is to address the concerns that people have, and reiterate the necessity of putting human needs over process.
 
-1515: intro to coaching style
-1525: demo
-1535: kata
-1605: retro
-1615: break
+** Talky bit: Strong-style pairing - 5 mins
+Introduce strong-style pairing
 
-1630: intro to ping-pong
-1640: kata
-1710: retro
-1720: pattern recognition - what do you notice about your feedback across the sessions?
+** Demo: Strong-style pairing - 10 mins
+If you have a co-host, or a willing volunteer, you can take 10 minutes to tackle the leap year kata with strong-style pairing. It's best for you to take the Navigator role while your co-host/volunteer types.
+** Practice: Strong style pairing - 30 mins
+This is the first practice session. The repository already contains a bunch of TDD katas. Divide people up into pairs and send them to break-out rooms. Let them know that you'll message them after 15 minutes in the slack group to swap roles.
 
-Create repository with
+If you're not using VSCode, then people will need to commit and push their work halfway through. Ask them to create a new branch that you can identity later with their names, eg. temp-bob-vittorio. You'll want to clean these up after the session so they don't all build up.
 
-/mars-rover
-  use for pairing demonstrations
-/leap-year
-/bit-parity
-/fizz-buzz
+I usually go from room to room, spending 5 minutes observing each pair before moving on but I don't know if that's actually valuable. It's disruptive when I enter the room, so consider leaving them alone, and telling them to ping you in the slack group if they need anything or have questions.
 
-https://docs.google.com/forms/d/1z8JygAAtM6LZ8190mxadfEunpDElW5L8OdAhk6-K1vA/edit#responses
+** Retro - 10 mins
+Ask participants to join you on the Miro board, and give you their flash feedback, and any thoughts or comments about the session. What did they enjoy? What did they not enjoy? How does this compare to their usual working practice?
+
+** Break - 15 mins
+Give people 15 mins to go to the toilet, drink some water, think about their place in the universe.
+
+** Talky bit: Coaching style - 10 mins (more like 5)
+Coaching style is what I call the style of pairing where one person is typing and the other is checking their work, asking them questions, pointing out errors.
+
+When showing the forklift and weightlifter, I generally ask the audience what's happening and what each person is doing. People are quick to understand the metaphor and it's good to have some interaction.
+
+** Demo: Coaching style - 10 mins
+Again, if you have a volunteer or co-host, it's worth doing a demo here. You should take the coach role.
+
+** Practice: Coaching style - 30 mins
+As before, send people off to work in breakout rooms in the same pairs as before. Again, let them know that you'll message after 15 minutes so they can swap roles.
+** Retro - 10 mins
+Ask participants to join you on the Miro board, and give you their flash feedback, and any thoughts or comments about the session. What did they enjoy? What did they not enjoy? How does this compare to their usual working practice?
+** Break - 15 mins
+Give people 15 mins to go to the toilet, drink some water, question what it IS to BE.
+** Talky bit:  Ping-pong style - 10 mins (more like 5)
+Most people are familiar with ping-pong style so this talky bit is straightforward.
+** Demo: Ping-pong style - 10 mins
+Again, if you have a volunteer or co-host, it's worth doing a demo here. Do something simple like leap year kata so that you have time to do a couple of rounds
+** Retro - 10 mins
+Ask participants to join you on the Miro board, and give you their flash feedback, and any thoughts or comments about the session. What did they enjoy? What did they not enjoy? How does this compare to their usual working practice?
+** Reflect - 10 mins
+Looking back on all the feedback from across the sessions, ask participants to look for patterns and conclusions. Which sessions did they collectively prefer and why? What did they find difficult across all the sessions. Do they want to make any changes to their working practices as a result of their learning?
+
+
+* After the workshop
+Remember to send out a feedback form and use it to adjust future sessions
+https://docs.google.com/forms/d/1z8JygAAtM6LZ8190mxadfEunpDElW5L8OdAhk6-K1vA/edit
