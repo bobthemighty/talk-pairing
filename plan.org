@@ -18,6 +18,12 @@ https://miro.com/app/board/uXjVPeb7UmQ=/
 ** Consider using VS Code
 VS Code has the live share feature, which is a handy way for people to pair, and saves some time with git commits and screen sharing.
 If you're using it, make sure you do a "sound-check" as part of your intro, where you get everyone to test that they are able to connect with their pair in VS Code.
+** Make sure you can serve the slides
+cd talk
+./present.sh
+
+The talk should open in your browser, at http://localhost:1948/words.md#/
+
 
 * The schedule
 
