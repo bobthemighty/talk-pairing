@@ -18,12 +18,17 @@ https://miro.com/app/board/uXjVPeb7UmQ=/
 ** Consider using VS Code
 VS Code has the live share feature, which is a handy way for people to pair, and saves some time with git commits and screen sharing.
 If you're using it, make sure you do a "sound-check" as part of your intro, where you get everyone to test that they are able to connect with their pair in VS Code.
+** Read through the slides and the presenter notes
+The slides are a markdown file `talk/words.md`
+I'm using a library called reveal-js with markdown
 ** Make sure you can serve the slides
 cd talk
 ./present.sh
 
 The talk should open in your browser, at http://localhost:1948/words.md#/
+You can hit "s" to open presenter mode, which will give you a separate window with notes, a timer, and a preview.
 
+If you make any changes to the markdown file, the slides will auto-reload
 
 * The schedule
 

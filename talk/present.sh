@@ -2,4 +2,4 @@
 
 npx reveal-md \
     words.md \
-    --vertical-separator "\n--\n"
+    --vertical-separator "\n--\n" -w
